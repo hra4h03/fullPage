@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+ 
+  <div id="fullPage">
+   
+    <div class="section ">
+      <div class="slide s1">
+        <h1>1 slide</h1>
+      </div>
+      <div class="slide s2">
+        <h1>2 slide</h1>
+      </div>
+      <div class="slide s3">
+        <h1>3 slide</h1>
+      </div>
+    </div>
+    <div class="section s2">
+      <h1>the 2 slide</h1>
+    </div>
+    <div class="section s3">
+      <h1>the 3 slide</h1>
+    </div>
+    <div class="section s4">
+      <h1>the 4 slide</h1>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+
+  <script>
+    new fullpage('#fullPage', {
+      anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+	    menu: '#myMenu',
+      autoscrolling: true,
+      navigation: true,
+      navigationTooltips: ['Memory', 'I dont know', 'Love'],
+      showActiveTooltip: true,
+      controArrows: false,
+      slidesNavigation: true,
+      scrollingSpeed: 1000,
+      loopBottom: true,
+	    loopTop: true,
+      parallax: true,
+	    parallaxOptions: {type: 'reveal', percentage: 2, property: 'translate'},
+      dragAndMove: "fingersonly"
+    })
+
+  </script>
+
+</body>
+</html>
