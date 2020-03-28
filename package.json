@@ -1,5 +1,25 @@
 {
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "name": "april7",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "production": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hrach2003/fullPage.git"
+  },
+  "author": "Hrach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hrach2003/fullPage/issues"
+  },
+  "homepage": "https://github.com/Hrach2003/fullPage#readme",
+  "description": ""
 }
